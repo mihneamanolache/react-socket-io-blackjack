@@ -11,7 +11,7 @@ const HOST: any = process.env.HOST || config.get<string>("host")
 const PORT: any = process.env.PORT || config.get<number>("port")
 const CORS_ORIGIN = config.get<string>("corsOrigin")
 
-const app = express()
+export const app = express()
 const server = createServer(app)
 const io = new Server(server, {
     cors: {

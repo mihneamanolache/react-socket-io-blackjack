@@ -1,0 +1,15 @@
+{
+  "name": "BlackJack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:mihneamanolache/react-socket-io-blackjack.git",
+  "author": "Mihnea Manolache <mihnea.manolache@yahoo.com>",
+  "license": "MIT",
+  "scripts": {    
+    "start:client": "cd client && yarn start",    
+    "start:server": "cd server && yarn start",    
+    "dev:server": "cd server && yarn dev",    
+    "start": "node server/index.js",    
+    "heroku-postbuild": "cd server && yarn install && cd ../client && yarn install && yarn run build"  
+  }
+}
