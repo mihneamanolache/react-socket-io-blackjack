@@ -1,0 +1,1 @@
+web: cd client && yarn && yarn run build
